@@ -25,7 +25,7 @@ struct SettingsView: View {
                 } label: {
                     Image(systemName: "xmark")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(.labelC2)
+                        .foregroundColor(Color.labelc2)
                         .frame(width: 30, height: 30)
                         .background(
                             Circle()
