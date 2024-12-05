@@ -12,8 +12,8 @@ struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.openURL) var openURL
     @State private var isShareSheetShowing = false
-    @State private var shareApp = "https://..."
-    @State private var policy = "https://www."
+    @State private var shareApp = "https://apps.apple.com/us/app/winhouse-meneger/id6739033803"
+    @State private var policy = "https://www.termsfeed.com/live/a5c5af63-65cb-4862-bffd-5d1e8608c513"
     
     var body: some View {
         ZStack {
