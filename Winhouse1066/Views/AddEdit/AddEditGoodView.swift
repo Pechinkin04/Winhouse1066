@@ -43,6 +43,9 @@ struct AddEditGoodView: View {
                                             )
                                     }
                                 }
+                                .onAppear {
+                                    good.category = winVM.categories.first
+                                }
                             }
                             .padding(.horizontal, 24)
                         }

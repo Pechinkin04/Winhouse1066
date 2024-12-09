@@ -131,7 +131,9 @@ struct GoodsShowView: View {
                                     }
                                 }
                                 .onLongPressGesture {
-                                    delCategoryAlert = category
+                                    if winVM.categories.count > 1 {
+                                        delCategoryAlert = category
+                                    }
                                 }
                             }
                         }
@@ -167,4 +169,5 @@ struct GoodsShowView: View {
 
 #Preview {
     GoodsShowView(addGood: .constant(false))
+        .environmentObject(WinVM())
 }

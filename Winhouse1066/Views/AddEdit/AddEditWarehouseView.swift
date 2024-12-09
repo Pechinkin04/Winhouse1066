@@ -43,6 +43,9 @@ struct AddEditWarehouseView: View {
                                             )
                                     }
                                 }
+                                .onAppear {
+                                    warehouse.category = winVM.categories.first
+                                }
                             }
                             .padding(.horizontal, 24)
                         }
